@@ -1,4 +1,4 @@
- 
+let trainers = document.querySelector('#trainers')
  
  
 let signIn = document.querySelector('#SignIn');

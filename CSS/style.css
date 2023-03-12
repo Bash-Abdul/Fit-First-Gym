@@ -188,9 +188,11 @@ header{
 }
 
 /* Trainers */
+
 .trainer_container{
     position: relative;
     margin-top: 2rem;
+    /* padding: 9%; */
 }
 .trainers_btn{
     margin-top: 1rem;
@@ -233,4 +235,160 @@ footer{
     color: var(--color-primary);
     text-align: center;
     line-height: 1.5;
+}
+
+
+
+@media (max-width:998px) {
+    html{
+        font-size: 90%;
+    }
+    .container{
+        width: var(--width-tablet);
+    }
+
+    header{
+        height: 40vh;
+    }
+
+    .header_content h1{
+        font-size: 5rem;
+        line-height: .9;
+        font-weight: 900;
+    }
+    .header_content h1 span{
+        font-size: 6.5rem;
+    }
+
+    .services_container{
+        display: grid;
+        /* grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr)); */
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5rem;
+    }
+    
+    .services h2{
+        font-size: 1.6rem;
+    }
+    .services p {
+        font-size: 1rem;
+    }
+
+    #pic{
+        height: 50vh;
+    }
+
+    .pic_content h1{
+        font-size: 3.5rem;
+    }
+    .pic_content h1 span{
+        -webkit-text-stroke: .1rem var(--color-white);
+        color: transparent;
+    }
+
+    #trainers h1{
+        font-size: 3.5rem;
+    }
+
+    .footer_container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+}
+
+@media (max-width:778px) {
+    /* body{
+        background: red;
+    } */
+
+    html{
+        font-size: 85%;
+    }
+
+    .container{
+        width: var(--width-mobile);
+    }
+
+    .nav_list{
+        position: absolute;
+        top: 100%;
+        background: var(--color-white);
+        width: 100vw;
+        display: none;
+    }
+
+    .nav_signin_signup{
+        display: none;
+    }
+
+    .nav_icon{
+        display: block;
+        color: var(--color-primary);
+        margin-right: 1rem;
+    }
+
+    header{
+        height: 60vh;
+    }
+    
+  
+    .header_content h1{
+        font-size: 3.5rem
+    }
+    .header_content h1 span{
+        font-size: 4.5rem;
+    }
+
+
+    .services_container{
+        /* grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr)); */
+        grid-template-columns: 1fr;
+        gap: 5rem;
+    }
+    
+  
+    .services p {
+        padding: 0 2rem;
+    }
+
+    .pic_content h1{
+        font-size: 3rem;
+    }
+
+    #trainers h1{
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width:460px) {
+    body{
+        background: pink;
+    }
+
+    header{
+        height: 30vh;
+    }
+
+    .header_content h1{
+        font-size: 2.3rem
+    }
+    .header_content h1 span{
+        font-size: 3rem;
+    }
+
+
+    #pic{
+        height: 50vh;
+        position: relative;
+    }
+    .pic_content h1{
+        font-size: 2.3rem;
+    }
+
+
+
+
+    .footer_container{
+        grid-template-columns: 1fr;
+    }
 }
