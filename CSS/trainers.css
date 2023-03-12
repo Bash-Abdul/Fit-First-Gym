@@ -97,7 +97,7 @@ main{
 #trainers h1{
     text-transform: uppercase;
 }
-.trainer_container{
+.trainers_container{
     text-align: left;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -150,7 +150,7 @@ main{
 }
 .flex_content h2{
     color: var(--color-primary);
-    font-size: 4rem;
+    font-size: 3.2rem;
     line-height: 1.1;
 }
 .flex_content p {
@@ -193,40 +193,115 @@ main{
     width: 2rem;
 }
 
-/* Footer Section */
-/* footer{
-    padding: 3rem;
-    background: var(--color-primary);
-    color: var(--color-white);
-    padding-bottom: 4rem;
+
+
+
+@media (max-width:998px) {
+    main{
+        height: 65vh;
+    }
+    .main_content h1{
+        font-size: 4rem;
+        margin-top: 3rem;
+    }
+
+    #trainers{
+        margin-top: 3rem;
+        padding-bottom: var(--padding-bottom);
+        text-align: center;
+    }
+    #trainers h1{
+        text-transform: uppercase;   
+    }
+
+    .lead{
+        width: 80%;
+        font-size: 1rem;
+    }
+
+    .trainers_container{
+        gap: 1rem;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .flex_container{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+        gap: 1rem;
+        align-items: center;
+        padding: 3rem 0;
+    }
+    .flex_content h2{
+        font-size: 2.1rem;
+    }
+    .flex_content p {
+        font-size: 1.1rem;
+    }
+
+    #equipment h1{
+        font-size: 3rem;
+    }
+    
 }
 
-.footer_container{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 3rem;
+@media (max-width: 778px){
+   
+
+    .main_content h1{
+        font-size: 3rem;
+    }
+
+    #trainers h1{
+        font-size: 2.6rem;
+    }
+
+    .trainers_container{ 
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+
+    .flex_container{
+        place-items: center;
+        gap: 3rem;
+    }
+    .flex_content h2{
+        font-size: 2.1rem;
+    }
+    .flex_content p {
+        font-size: 1rem;
+    }
+
 }
-.footers li a{
-    color: var(--color-white);
-    margin-top: 1rem;
+
+
+@media (max-width:460px) {
+    body{
+        background: pink;
+    }
+
+    main{
+        height: 45vh;
+    }
+
+    .main_content h1{
+        font-size: 2.5rem;
+    }
+
+
+    #trainers h1{
+        font-size: 1.8rem;
+    }
+    .lead{
+        font-size: .8rem;
+        text-align: center;
+    }
+
+    .trainers_container{ 
+        grid-template-columns: 1fr;
+    }
+
+    #equipment h1{
+        font-size: 2.2rem;
+    }
 }
-.footers li:hover a{
-    margin-left: 1rem;
-}
-.footer_socials{
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-}
-.footer_socials li a{
-    display: inline-block;
-    font-size: 1.5rem;
-    height: 2rem;
-    width: 2rem;
-    border-radius: .5rem;
-    background: var(--color-white);
-    color: var(--color-primary);
-    text-align: center;
-    line-height: 1.5;
-}
-    */

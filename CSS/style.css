@@ -189,14 +189,13 @@ header{
 
 /* Trainers */
 
-.trainer_container{
+/* .trainer_container{
     position: relative;
     margin-top: 2rem;
-    /* padding: 9%; */
 }
 .trainers_btn{
     margin-top: 1rem;
-}
+} */
 
 /* Footer Section */
 footer{
@@ -384,9 +383,6 @@ footer{
     .pic_content h1{
         font-size: 2.3rem;
     }
-
-
-
 
     .footer_container{
         grid-template-columns: 1fr;
