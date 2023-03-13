@@ -173,6 +173,7 @@ main{
     margin-top: 3rem;
     text-align: center;
     padding-bottom: 3rem;
+    padding-inline: 6%;
 }
 .equipment_container{
     margin-top: 3rem;
@@ -276,10 +277,6 @@ main{
 
 
 @media (max-width:460px) {
-    body{
-        background: pink;
-    }
-
     main{
         height: 45vh;
     }
