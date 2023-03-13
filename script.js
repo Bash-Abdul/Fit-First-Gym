@@ -1,4 +1,16 @@
 let trainers = document.querySelector('#trainers')
+let menu = document.querySelector('.nav_icon');
+let nav = document.querySelector('.nav_list')
+
+menu.addEventListener('click', function(){
+    nav.classList.toggle('active')
+})
+
+window.onscroll = function(){
+    if (window.scrollY > 60){
+        nav.classList.remove('active')
+    }
+}
  
  
 let signIn = document.querySelector('#SignIn');
